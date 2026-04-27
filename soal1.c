@@ -58,7 +58,7 @@ void meteoritDisplay(Meteorit ray[], int n){
         limit=n; //it means, kalau datanya kurang dari 3, yaudah gt tampilin yg ada
     }
     for(int i=0; i<limit; i++){
-        printf("%s %d %d\n", ray[i].nama, &ray[i].massa, &ray[i].kemurnian);
+        printf("%s %d %d\n", ray[i].nama, ray[i].massa, ray[i].kemurnian);
     }
 }
 
@@ -73,6 +73,6 @@ int main(){
 
     //calling all void CIHUUYYYY
     inputData(isi, n);
-    urutinMeteorit(isi, n);
+    urutMeteorit(isi, n);
     meteoritDisplay(isi, n);
 }
