@@ -43,7 +43,7 @@ void urutMeteorit(Meteorit ray[], int n){
                     tukerMeteorit(&ray[j], &ray[j+1]);
                 }
                 else if(ray[j].massa==ray[j+1].massa){ //kalau sama run ke proses urutan huruf
-                    if(strcomp(ray[j].nama, ray[j+1].nama)>0){
+                    if(strcmp(ray[j].nama, ray[j+1].nama)>0){
                         tukerMeteorit(&ray[j], &ray[j+1]);
                     }
                 }
